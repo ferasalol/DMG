@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('https://cdn.wallpapersafari.com/2/58/L8aHEM.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
+header {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.85);
+  border-bottom: 2px solid #FFD700;
+}
+
+.logo {
+  max-width: 100px;
+}
+
+h1 {
+  margin: 10px 0;
+  color: #FFD700;
+}
+
+.content {
+  margin: 40px auto;
+  padding: 30px;
+  max-width: 700px;
+  background-color: rgba(0, 0, 0, 0.85);
+  border-radius: 12px;
+  box-shadow: 0 0 15px #FFD70055;
+  line-height: 1.8;
+  font-size: 1.2rem;
+}
+
+button {
+  background-color: #FFD700;
+  border: none;
+  padding: 15px 30px;
+  margin-top: 20px;
+  font-size: 1.1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  color: black;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #e6c200;
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #ccc;
+  padding-bottom: 20px;
+}
