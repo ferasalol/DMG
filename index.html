@@ -1,32 +1,94 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>بطولة DMG - PUBG</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DMG Store | متجر شدات ببجي</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #111; color: #fff; }
+    header { background: #ffcc00; color: #000; padding: 20px; text-align: center; }
+    nav { background: #222; display: flex; justify-content: center; gap: 15px; padding: 10px; }
+    nav a { color: #fff; text-decoration: none; font-weight: bold; }
+    section { padding: 20px; max-width: 900px; margin: auto; }
+    .card { background: #1c1c1c; padding: 20px; border-radius: 10px; margin-bottom: 20px; box-shadow: 0 0 10px #000; }
+    footer { background: #222; text-align: center; padding: 15px; font-size: 14px; color: #aaa; }
+    input, select, textarea, button { width: 100%; padding: 10px; margin-top: 10px; border: none; border-radius: 5px; }
+    button { background: #ffcc00; color: #000; font-weight: bold; cursor: pointer; }
+  </style>
 </head>
 <body>
+
   <header>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/PUBG_logo.svg/1280px-PUBG_logo.svg.png" alt="PUBG Logo" class="logo" />
-    <h1>بطولة DMG PUBG</h1>
-    <p>أثبت أنك الأفضل وادخل التحدي 🔥</p>
+    <h1>DMG Store</h1>
+    <p>أفضل متجر لشحن شدات ببجي وبيع الحسابات</p>
   </header>
 
-  <section class="content">
-    <p><strong>💰 رسوم الاشتراك:</strong> 3 دولار</p>
-    <p><strong>🏆 الجوائز:</strong> شدات UC + جوائز نقدية</p>
-    <p><strong>📅 التاريخ:</strong> 20 يوليو 2025</p>
-    <p><strong>⏰ الساعة:</strong> 9:00 مساءً بتوقيت مكة</p>
-    <p><strong>📲 تواصل:</strong> @DMG_TEAM</p>
+  <nav>
+    <a href="#uc">شحن شدات</a>
+    <a href="#accounts">بيع حسابات</a>
+    <a href="#contact">تواصل معنا</a>
+  </nav>
 
-    <button onclick="register()">📥 التسجيل الآن</button>
+  <section id="uc">
+    <h2>شحن شدات ببجي</h2>
+    <div class="card">
+      <form>
+        <label>معرّف الحساب (ID)</label>
+        <input type="text" placeholder="أدخل ID الخاص بك">
+
+        <label>اختر الكمية</label>
+        <select>
+          <option>60 شدة - 1$</option>
+          <option>325 شدة - 5$</option>
+          <option>660 شدة - 10$</option>
+          <option>1800 شدة - 25$</option>
+        </select>
+
+        <label>طريقة الدفع</label>
+        <select>
+          <option>PayPal</option>
+          <option>بطاقات شحن</option>
+          <option>فودافون كاش / STC Pay</option>
+        </select>
+
+        <button type="submit">أطلب الآن</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="accounts">
+    <h2>حسابات ببجي المعروضة للبيع</h2>
+    <div class="card">
+      <h3>حساب مميز (كرافيك + سكنات نادرة)</h3>
+      <p>السعر: 30$</p>
+      <button>اطلب الحساب</button>
+    </div>
+    <div class="card">
+      <h3>حساب عادي (ليفلات عالية + تقييم جيد)</h3>
+      <p>السعر: 10$</p>
+      <button>اطلب الحساب</button>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>تواصل معنا</h2>
+    <div class="card">
+      <form>
+        <label>اسمك</label>
+        <input type="text" placeholder="اكتب اسمك">
+
+        <label>الرسالة</label>
+        <textarea rows="5" placeholder="اكتب رسالتك أو استفسارك"></textarea>
+
+        <button type="submit">إرسال</button>
+      </form>
+      <p>أو تواصل معنا عبر: <br> واتساب: 000000000 <br> تيليجرام: @DMGSupport</p>
+    </div>
   </section>
 
   <footer>
-    هذه البطولة من تنفيذ فريق DMG المستقل و هي غير تابعة ل شركة PUBG أو KRAFTON و هذا لا يعني وجود أي مخاطر بالمشاركة
+    &copy; 2025 DMG Store - جميع الحقوق محفوظة
   </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>
