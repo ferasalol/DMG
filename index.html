@@ -3,41 +3,65 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DMG Store | متجر شدات ببجي</title>
+  <title>DMG Store | شحن شدات ببجي</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; background: #111; color: #fff; }
-    header { background: #ffcc00; color: #000; padding: 20px; text-align: center; }
-    nav { background: #222; display: flex; justify-content: center; gap: 15px; padding: 10px; }
-    nav a { color: #fff; text-decoration: none; font-weight: bold; }
-    section { padding: 20px; max-width: 900px; margin: auto; }
-    .card { background: #1c1c1c; padding: 20px; border-radius: 10px; margin-bottom: 20px; box-shadow: 0 0 10px #000; }
-    footer { background: #222; text-align: center; padding: 15px; font-size: 14px; color: #aaa; }
-    input, select, textarea, button { width: 100%; padding: 10px; margin-top: 10px; border: none; border-radius: 5px; }
-    button { background: #ffcc00; color: #000; font-weight: bold; cursor: pointer; }
+    body { font-family: 'Segoe UI', sans-serif; margin: 0; background: linear-gradient(to bottom, #0e0e0e, #1c1c1c); color: #fff; }
+    header {
+      background: url('https://i.imgur.com/qWQ1R4F.jpg') no-repeat center center / cover;
+      color: #fff; text-align: center; padding: 80px 20px;
+    }
+    header h1 { font-size: 48px; margin: 0; }
+    header p { font-size: 18px; margin-top: 10px; }
+
+    nav { background: #111; display: flex; justify-content: center; gap: 20px; padding: 15px; box-shadow: 0 2px 4px #000; }
+    nav a { color: #ffcc00; text-decoration: none; font-weight: bold; font-size: 16px; transition: color 0.3s; }
+    nav a:hover { color: #fff; }
+
+    section { padding: 40px 20px; max-width: 900px; margin: auto; }
+    .card {
+      background: #222; padding: 30px; border-radius: 15px;
+      box-shadow: 0 0 15px rgba(255, 204, 0, 0.2); margin-bottom: 30px;
+    }
+    .card img { max-width: 100%; border-radius: 10px; margin-bottom: 20px; }
+    h2 { color: #ffcc00; }
+    label { display: block; margin-top: 15px; margin-bottom: 5px; font-weight: bold; }
+    input, select, textarea, button {
+      width: 100%; padding: 12px; border: none; border-radius: 8px; font-size: 15px;
+    }
+    input, select, textarea { background: #333; color: #fff; }
+    button {
+      background: #ffcc00; color: #000; font-weight: bold; margin-top: 20px;
+      cursor: pointer; transition: background 0.3s;
+    }
+    button:hover { background: #e6b800; }
+    footer {
+      background: #111; text-align: center; padding: 20px; color: #aaa; font-size: 14px;
+      border-top: 1px solid #333;
+    }
   </style>
 </head>
 <body>
 
   <header>
     <h1>DMG Store</h1>
-    <p>أفضل متجر لشحن شدات ببجي وبيع الحسابات</p>
+    <p>أسرع وأأمن طريقة لشحن شدات ببجي بأسعار منافسة!</p>
   </header>
 
   <nav>
     <a href="#uc">شحن شدات</a>
-    <a href="#accounts">بيع حسابات</a>
     <a href="#contact">تواصل معنا</a>
   </nav>
 
   <section id="uc">
-    <h2>شحن شدات ببجي</h2>
+    <h2>طلب شحن شدات</h2>
     <div class="card">
-      <form>
+      <img src="https://i.imgur.com/3u0ZfLM.png" alt="UC Image">
+      <form action="https://formsubmit.co/ferashabash77@gmail.com" method="POST">
         <label>معرّف الحساب (ID)</label>
-        <input type="text" placeholder="أدخل ID الخاص بك">
+        <input type="text" name="player_id" placeholder="أدخل ID الخاص بك" required>
 
         <label>اختر الكمية</label>
-        <select>
+        <select name="uc_amount" required>
           <option>60 شدة - 1$</option>
           <option>325 شدة - 5$</option>
           <option>660 شدة - 10$</option>
@@ -45,50 +69,44 @@
         </select>
 
         <label>طريقة الدفع</label>
-        <select>
+        <select name="payment_method" required>
           <option>PayPal</option>
           <option>بطاقات شحن</option>
           <option>فودافون كاش / STC Pay</option>
         </select>
 
-        <button type="submit">أطلب الآن</button>
-      </form>
-    </div>
-  </section>
+        <label>ملاحظات (اختياري)</label>
+        <textarea name="notes" placeholder="هل لديك أي ملاحظات؟"></textarea>
 
-  <section id="accounts">
-    <h2>حسابات ببجي المعروضة للبيع</h2>
-    <div class="card">
-      <h3>حساب مميز (كرافيك + سكنات نادرة)</h3>
-      <p>السعر: 30$</p>
-      <button>اطلب الحساب</button>
-    </div>
-    <div class="card">
-      <h3>حساب عادي (ليفلات عالية + تقييم جيد)</h3>
-      <p>السعر: 10$</p>
-      <button>اطلب الحساب</button>
+        <button type="submit">أرسل الطلب</button>
+      </form>
     </div>
   </section>
 
   <section id="contact">
     <h2>تواصل معنا</h2>
     <div class="card">
-      <form>
-        <label>اسمك</label>
-        <input type="text" placeholder="اكتب اسمك">
-
-        <label>الرسالة</label>
-        <textarea rows="5" placeholder="اكتب رسالتك أو استفسارك"></textarea>
-
-        <button type="submit">إرسال</button>
-      </form>
-      <p>أو تواصل معنا عبر: <br> واتساب: 000000000 <br> تيليجرام: @DMGSupport</p>
+      <p>إذا كان لديك أي استفسار أو تحتاج مساعدة، تواصل معنا عبر:</p>
+      <ul>
+        <li>📱 واتساب: <strong>000000000</strong></li>
+        <li>📨 تيليجرام: <strong>@DMGSupport</strong></li>
+        <li>📧 الإيميل: <strong>ferashabash77@gmail.com</strong></li>
+      </ul>
     </div>
   </section>
 
   <footer>
     &copy; 2025 DMG Store - جميع الحقوق محفوظة
   </footer>
+
+  <script>
+    // مثال بسيط: إشعار بعد إرسال النموذج
+    document.querySelectorAll('form').forEach(form => {
+      form.addEventListener('submit', () => {
+        alert('تم إرسال طلبك بنجاح! سيتم التواصل معك خلال دقائق.');
+      });
+    });
+  </script>
 
 </body>
 </html>
